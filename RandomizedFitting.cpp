@@ -20,7 +20,7 @@ void RandomizedFitting::fit(vector<Point> p_list){
     float min_error = -1;
     Point min_p1, min_p2;
     int num_points = p_list.size();
-    for(int i=0; i<1000; i++){
+    for(int i=0; i<max(5000, num_points); i++){
         // generate two random unique index
         int index_1 = rand() % num_points;
         int index_2 = rand() % num_points;
