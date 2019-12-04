@@ -19,6 +19,8 @@ int main(){
         temp.init(stof(l.substr(0, index)), stof(l.substr(index+1)));
         p_list.push_back(temp);
     }
+    if(p_list.size()<3)
+        return 0;
 
     RandomizedFitting rf;
     rf.fit(p_list);

@@ -2,9 +2,9 @@
 
 class Point {
     public:
-        float x;
-        float y;
-        void init(float init_x, float init_y){
+        double x;
+        double y;
+        void init(double init_x, double init_y){
             x = init_x;
             y = init_y;
         }
